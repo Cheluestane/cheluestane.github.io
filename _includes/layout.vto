@@ -50,17 +50,49 @@
 			{{ /if }}
 		</div>
 		{{ /if }}
-		</div>
 	</div>
+  </div>
   </body>
+  <div id="lightbox" class="lightbox" hidden>
+  	<img id="lightbox-img" alt="">
+  </div>
   <script>
   	(function () {
   		var toggle = document.querySelector('.nav-toggle');
   		var sidebar = document.getElementById('sidebar');
-  		if (!toggle || !sidebar) return;
-  		toggle.addEventListener('click', function () {
-  			var open = sidebar.classList.toggle('open');
-  			toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  		if (toggle && sidebar) {
+  			toggle.addEventListener('click', function () {
+  				var open = sidebar.classList.toggle('open');
+  				toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  			});
+  		}
+
+  		var lightbox = document.getElementById('lightbox');
+  		var lightboxImg = document.getElementById('lightbox-img');
+  		if (!lightbox || !lightboxImg) return;
+
+  		var panel = document.querySelector('.markdownpanel');
+  		if (!panel) return;
+
+  		panel.addEventListener('click', function (e) {
+  			var target = e.target;
+  			if (target && target.tagName === 'IMG') {
+  				lightboxImg.src = target.src;
+  				lightboxImg.alt = target.alt || '';
+  				lightbox.hidden = false;
+  				document.body.style.overflow = 'hidden';
+  			}
+  		});
+
+  		function close() {
+  			lightbox.hidden = true;
+  			lightboxImg.src = '';
+  			document.body.style.overflow = '';
+  		}
+
+  		lightbox.addEventListener('click', close);
+  		document.addEventListener('keydown', function (e) {
+  			if (e.key === 'Escape' && !lightbox.hidden) close();
   		});
   	})();
   </script>
