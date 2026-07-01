@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>D. F. Animator</title>
+		<link rel="stylesheet" href="/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  	<button class="nav-toggle" aria-expanded="false" aria-controls="sidebar" type="button">Menu</button>
+  	<div class="container">
+		<div class="sidebar" id="sidebar">
+			<div class="homebutton">
+				<a href=/>
+					<img src="/content/name.png" alt="name_img" style="max-height: 200px; max-width: 80%; display: block; margin: 10px auto;"/>
+					<h2 style="margin: 8px;	text-align: center;">2D/3D Animator <br> and 3D generalist.</h2>
+				</a>
+			</div>
+			<div class="navbar">
+				{{ for item of nav }}
+				<form action="{{ item.url }}">
+					<input type="submit" value="{{ item.name }}" />
+				</form>
+				{{ /for }}
+			</div>
+		</div>
+		{{ if category }}
+		<div class="displaypanel">
+			{{ for child of search.pages("url^=" + url) }}
+			{{ if child.url !== url && !child.url.slice(url.length, -1).includes("/") }}
+			<a href="{{ child.url }}">
+				<div class="panelcontent">
+				<h5 style="color: white; position: absolute; bottom: 0px; z-index: 1;">{{ child.title }}</h5>
+					<img src="{{ child.url }}{{ child.thumbnail }}" class="panel_img" alt="Thumbnail">
+				</div>
+			</a>
+			{{ /if }}
+			{{ /for }}
+		</div>
+		{{ /if }}
+		{{ if !category }}
+		<div class="project_page_container">
+			<div class="markdownpanel">
+				{{ content }}
+			</div>
+			{{ if description }}
+			<div class="description">
+				{{ description |> md |> safe }}
+			</div>
+			{{ /if }}
+		</div>
+		{{ /if }}
+		</div>
+	</div>
+  </body>
+  <script>
+  	(function () {
+  		var toggle = document.querySelector('.nav-toggle');
+  		var sidebar = document.getElementById('sidebar');
+  		if (!toggle || !sidebar) return;
+  		toggle.addEventListener('click', function () {
+  			var open = sidebar.classList.toggle('open');
+  			toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  		});
+  	})();
+  </script>
+</html>

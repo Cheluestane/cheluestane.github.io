@@ -1,0 +1,16 @@
+# Build output
+_site/
+
+# Lume cache
+_cache/
+
+# Deno
+.deno/
+deno.lock
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*~
