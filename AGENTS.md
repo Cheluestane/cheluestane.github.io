@@ -8,7 +8,18 @@ Lume 3 static site (Deno). Source files live at the project root; `_site/` is ge
 - `deno task build` — production build into `_site/`
 - `deno task lume <args>` — raw Lume CLI passthrough
 
-Lume runs remotely from `https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/` (pinned, `lock: false`); there is no local Lume dependency to install. Lint plugin is loaded from the same CDN.
+Lume runs remotely from `https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/` (pinned, `lock: false`); there is no local Lume dependency to install. Lint plugin is loaded from the same CDN. If a plugin or remote import needs a new host, add it to `permissions.lume` in `deno.json` rather than running with `--allow-all`.
+
+## Verification
+
+There are no tests or typecheck tasks. After changes, run `deno task build` (or `deno task serve` and visually check) to confirm the site still generates before committing.
+
+## Workflow
+
+- Commit after every significant feature is added or removed — do not batch multiple unrelated changes into one commit.
+- Default branch is `master` (not `main`).
+- The repo was initialized with a placeholder git identity (`opencode <opencode@local>`). If the user wants commits attributed to them, set `git config user.name` / `user.email` locally before committing.
+- Never commit build artifacts (`_site/`, `_cache/`) or `deno.lock` — they are in `.gitignore`.
 
 ## Layout
 
@@ -25,8 +36,3 @@ Lume runs remotely from `https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/` (pinn
 
 - Layouts are Vento (`.vto`). JSX is configured (`jsxImportSource: lume`, runtime `ssx`) for components if added later.
 - Unstable Deno flags required: `temporal`, `fmt-component` — already declared in `deno.json`; do not remove.
-- Lume permissions are scoped in `deno.json` under `permissions.lume`. If a plugin or remote import needs a new host, add it there rather than running with `--allow-all`.
-
-## Verification
-
-There are no tests or typecheck tasks. After changes, run `deno task build` (or `deno task serve` and visually check) to confirm the site still generates.
