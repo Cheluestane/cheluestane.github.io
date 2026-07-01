@@ -229,6 +229,9 @@ a:visited {
 		width: 90%;
 	}
 }
+.lightbox[hidden] {
+	display: none;
+}
 .lightbox {
 	position: fixed;
 	inset: 0;
