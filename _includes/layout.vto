@@ -30,7 +30,7 @@
 			{{ if child.url !== url && !child.url.slice(url.length, -1).includes("/") }}
 			<a href="{{ child.url }}">
 				<div class="panelcontent">
-				<h5 style="color: white; position: absolute; bottom: 0px; z-index: 1;">{{ child.title }}</h5>
+				<h5 style="color: white; position: absolute; bottom: 10%; z-index: 1; margin: 0px">{{ child.title }}</h5>
 					<img src="{{ child.url }}{{ child.thumbnail }}" class="panel_img" alt="Thumbnail">
 				</div>
 			</a>
