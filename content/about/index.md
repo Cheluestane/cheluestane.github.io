@@ -43,11 +43,6 @@ H.F. Fenwick 2014-2018<br>
 - Residential refinishing and painting.<br>
 - Completed apartment and home remodels to high standards, completed ahead of schedule/on time.<br>
 
-<h3>Education</h3>
-Home-schooled/self-taught.
-
-Using a variety of resources throughout the years I have taught myself quite a bit: filmmaking, drawing, 3D modeling, VFX, animation, editing and 3D printing.
-
 <h3>Skills</h3>
 Animation (5+ years)
 - 2D animation
