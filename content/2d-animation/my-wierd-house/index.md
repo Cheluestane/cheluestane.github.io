@@ -1,12 +1,8 @@
 ---
 title: My wierd house
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 ---
-<video src="final.mp4" controls>Your browser does not support this video format.</video>
-Final color.<br>
-Unfortunately, I bit off more than I could chew so I never finished the first shot.
+<video src="october finished.mp4" controls>Your browser does not support this video format.</video>
 
-<img src="test panel.jpg" alt="color concept">
-A sketch to workout the colors and mood.
-<video src="coat test.mp4" controls>Your browser does not support this video format.</video>
-Here is an animation I made studying reference footage.
+<div class="img_row"><img src="char1.png" alt="character concept"><img src="outfit.png" alt="characters"></div>
+<img src="house.png" alt="house">

@@ -1,12 +1,7 @@
 ---
 title: Curtis
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 ---
-<video src="final.mp4" controls>Your browser does not support this video format.</video>
-Final color.<br>
-Unfortunately, I bit off more than I could chew so I never finished the first shot.
-
-<img src="test panel.jpg" alt="color concept">
-A sketch to workout the colors and mood.
-<video src="coat test.mp4" controls>Your browser does not support this video format.</video>
-Here is an animation I made studying reference footage.
+<video src="curtis smoking.mp4" controls>Your browser does not support this video format.</video>
+<div class="img_row"><img src="bat.jpg" alt="concept"><img src="point.jpg" alt="concept"><img src="picture.jpg" alt="concept"><img src="smoke.jpg" alt="concept"></div>
+<img src="curtis FINAL.png" alt="concept">

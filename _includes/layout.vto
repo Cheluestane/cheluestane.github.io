@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>D. F. Animator</title>
+    <title>{{ title }} - D. F. Animator</title>
 		<link rel="stylesheet" href="/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -51,8 +51,6 @@
 		</div>
 		{{ /if }}
 	</div>
-  </div>
-  </body>
   <div id="lightbox" class="lightbox" hidden>
   	<img id="lightbox-img" alt="">
   </div>
@@ -74,26 +72,45 @@
   		var panel = document.querySelector('.markdownpanel');
   		if (!panel) return;
 
-  		panel.addEventListener('click', function (e) {
-  			var target = e.target;
-  			if (target && target.tagName === 'IMG') {
-  				lightboxImg.src = target.src;
-  				lightboxImg.alt = target.alt || '';
-  				lightbox.hidden = false;
-  				document.body.style.overflow = 'hidden';
-  			}
-  		});
+   		panel.addEventListener('click', function (e) {
+   			var target = e.target;
+   			if (target && target.tagName === 'IMG') {
+   				lightboxImg.src = target.src;
+   				lightboxImg.alt = target.alt || '';
+   				lightbox.hidden = false;
+   				document.body.style.overflow = 'hidden';
+   			}
+   		});
 
-  		function close() {
-  			lightbox.hidden = true;
-  			lightboxImg.src = '';
-  			document.body.style.overflow = '';
-  		}
+   		function close() {
+   			lightbox.hidden = true;
+   			lightboxImg.src = '';
+   			document.body.style.overflow = '';
+   		}
 
-  		lightbox.addEventListener('click', close);
-  		document.addEventListener('keydown', function (e) {
-  			if (e.key === 'Escape' && !lightbox.hidden) close();
-  		});
-  	})();
-  </script>
+   		lightbox.addEventListener('click', close);
+   		document.addEventListener('keydown', function (e) {
+   			if (e.key === 'Escape' && !lightbox.hidden) close();
+   		});
+   	})();
+
+   (function () {
+   	document.querySelectorAll('video').forEach(function (video) {
+   		if (video.closest('.video-player')) return;
+   		var wrapper = document.createElement('div');
+   		wrapper.className = 'video-player';
+   		video.parentNode.insertBefore(wrapper, video);
+   		wrapper.appendChild(video);
+   		var btn = document.createElement('button');
+   		btn.type = 'button';
+   		btn.className = 'video-play';
+   		btn.setAttribute('aria-label', 'Play video');
+   		wrapper.appendChild(btn);
+   		btn.addEventListener('click', function () { video.play(); });
+   		video.addEventListener('play', function () { btn.hidden = true; });
+   		video.addEventListener('pause', function () { btn.hidden = false; });
+   	});
+   })();
+   </script>
+  </body>
 </html>

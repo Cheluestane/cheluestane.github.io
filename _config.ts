@@ -9,7 +9,7 @@ site.use(slugifyUrls());
 
 site.copy("styles.css");
 site.copy(
-  [".jpg", ".jpeg", ".png", ".webp", ".gif", ".mp4", ".webm", ".mov"],
+  [".jpg", ".jpeg", ".png", ".webp", ".gif", ".mp4", ".webm"],
 );
 
 export default site;

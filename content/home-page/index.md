@@ -1,6 +1,6 @@
 ---
 title: Home page
 url: /
-video: /content/home-page/Demo-reel.mp4
+video: /content/home-page/Demo-Reel.mp4
 ---
-<video src="/content/home-page/Demo-reel.mp4" controls></video>
+<video src="/content/home-page/Demo-Reel.mp4" poster="/content/home-page/thumbnail.jpg" controls></video>

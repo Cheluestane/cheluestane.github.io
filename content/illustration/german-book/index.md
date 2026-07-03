@@ -1,12 +1,11 @@
 ---
 title: German vocabulary book.
-thumbnail: hands 1-22-2024.png
+thumbnail: thumbnail.png
 ---
-<img src="hands 1-19-2024.png" alt="hands">
-<img src="hands 1-20-2024.png" alt="hands">
-<img src="hands 1-22-2024.png" alt="hands">
-<img src="hands 1-23-2024.png" alt="hands">
-<img src="hands from ref 9-18-2024.png" alt="hands">
-Draw with pen on paper.
-<div class="img_row"><img src="page 7.png" alt="hands"><img src="page 8.png" alt="hands"></div>
-<div class="img_row"><img src="page 9.png" alt="hands"><img src="hand 6-11-2025.png" alt="hands"></div>
+<div class="img_row"><img src="evening.png" alt="wolf"><img src="night.png" alt="duck"></div>
+<div class="img_row"><img src="wet.png" alt="wolf"><img src="horse.png" alt="duck"></div>
+<div class="img_row"><img src="fall.png" alt="wolf"><img src="day.png" alt="duck"></div>
+<div class="img_row"><img src="boot.png" alt="wolf"><img src="courage.png" alt="duck"></div>
+<div class="img_row"><img src="girl.png" alt="bear"><img src="dog.png" alt="dog"></div>
+<div class="img_row"><img src="wolf.png" alt="wolf"><img src="squirrel.png" alt="duck"></div>
+<div class="img_row"><img src="baby.png" alt="wolf"><img src="child.png" alt="duck"></div>
