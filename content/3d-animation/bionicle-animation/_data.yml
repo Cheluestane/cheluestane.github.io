@@ -1,0 +1,8 @@
+description: |
+  # Lego Bionicle animation
+
+  A personal project.
+  
+  The rigging and animation on this was far more difficult than I thought.<br>
+  The toes are so long compared to the foot that it makes walking tricky to animate.
+  And because of the way the arms are built a simple IK arm rig didn't work.
