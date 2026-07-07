@@ -28,7 +28,7 @@ Animator/Filmmaker
 
 - Directed, edited and produced a short live action film(linked above.)
 
-Illustrated a children's learning book.<br>
+Illustrated a children's vocabulary book.<br>
 Produced custom artwork for multiple board-games.<br>
 
 <h4>Other experience</h4>
@@ -51,11 +51,12 @@ Adobe construction 2021<br>
 - building adobe structures: covered the structures in hydraulic lime<br>
 
 <h3>Skills</h3>
+
 Animation (5+ years)
 - 2D animation
 - 2D effects animation
 - 3D animation
-3D generalist (13+ years)
+- 3D generalist (13+ years)
 - Modeling, rigging, shading, lighting
 
 Video editing / filmmaking
@@ -77,7 +78,7 @@ Coding knowledge (HTML, CSS, Unity script)<br>
 
 Prop/costume design and building
 
-Mold making and resin casting
+Silicone mold making and resin casting
 
 Writing accurate subtitles for multiple German language films
 </div>
