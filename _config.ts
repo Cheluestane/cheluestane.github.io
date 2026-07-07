@@ -7,6 +7,7 @@ const site = lume({
 
 site.use(slugifyUrls());
 
+site.copy("CNAME");
 site.copy("styles.css");
 site.copy(
   [".jpg", ".jpeg", ".png", ".webp", ".gif", ".mp4", ".webm"],
