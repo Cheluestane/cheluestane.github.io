@@ -6,17 +6,15 @@ title: About
 <h3>Blurb</h3>
 Creative 2D/3D animator, CG gereralist and seasoned Blender artist with experience in many aspects of filmmaking.
 <h3>Biography</h3>
-I grew up home-schooled and have always been interested in filmmaking of one kind or another.
+I grew up home-schooled and have always been interested in behind-the-scenes, and filmmaking of one kind or another.
 
 Using a variety of resources throughout the years I have taught myself quite a bit: filmmaking, drawing, 3D modeling, VFX, animation, editing and 3D printing.
 
 When I was sixteen I directed, edited and produced a short film with my brothers and a friend(voice over done by my cousin.)<br>
 <a href="https://www.youtube.com/watch?v=OpKOYrhusz8" target="_blank" style="text-decoration: underline;">Watch film here</a><br>
 
-What drives me is the desire to tell good stories and to tell them well.
+What drives me is the desire to tell good stories and tell them well.
 <h3>Experience</h3>
-
-
 Hobbyist
 Animator/Filmmaker
 - Completed 3 fully-rendered 3D animations from scratch, averaging 20 seconds in length, with an average production time of 6 weeks (20 hours/week)

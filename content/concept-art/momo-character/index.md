@@ -3,8 +3,8 @@ title: Momo character design
 thumbnail: thumbnail.png
 ---
 <img src="Momo turnaround color.png" alt="model">
-<div class="img_row"><img src="thumbnail.png" alt="face sketch"><img src="pout.jpg" alt="pout"></div>
-<div class="img_row"><img src="scare.jpg" alt="scare"><img src="momo face 5.jpg" alt="laughing"></div>
+<div class="img_row"><img src="thumbnail.png" alt="laughing"><img src="pout.jpg" alt="pout"><img src="momo smile.png" alt="smile"></div>
+<div class="img_row"><img src="scare.jpg" alt="scare"><img src="momo face 5.jpg" alt="scare 2"></div>
 <img src="Momo head construction.png" alt="head">
 <img src="Momo turnaround color.gif" alt="head turn around">
 Final face design.<br>
